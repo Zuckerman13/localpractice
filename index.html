@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalPractice.com — Federal Circuit Court Local Rules & Procedures</title>
+  <meta name="description" content="Free, centralized resource for local rules and procedures from all 13 U.S. Courts of Appeals. No login. No paywall. No hassle.">
+  <meta name="keywords" content="federal court local rules, circuit court local rules, federal appellate rules, court of appeals local rules, federal litigation, appellate practice">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="LocalPractice.com">
+  <link rel="canonical" href="https://www.localpractice.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LocalPractice.com — Federal Circuit Court Local Rules & Procedures">
+  <meta property="og:description" content="Free, centralized resource for local rules and procedures from all 13 U.S. Courts of Appeals. No login. No paywall. No hassle.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.localpractice.com/">
+  <meta property="og:site_name" content="LocalPractice.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="LocalPractice.com — Federal Circuit Court Local Rules & Procedures">
+  <meta name="twitter:description" content="Free access to local rules and procedures for all 13 U.S. Courts of Appeals. No login. No hassle.">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"LocalPractice.com","url":"https://www.localpractice.com","description":"Free, centralized resource for local rules and procedures from the U.S. Courts of Appeals.","publisher":{"@type":"Organization","name":"Local Practice Enterprises"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LegalService","name":"LocalPractice.com","description":"Free centralized resource for federal appellate court local rules and procedures.","url":"https://www.localpractice.com","areaServed":"United States","serviceType":"Legal Research Resource"}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #0f0f0f;
+      --gray-dark: #444;
+      --gray-mid: #777;
+      --gray-light: #e0e0e0;
+      --gray-bg: #f9f9f9;
+      --white: #fff;
+      --accent: #1a56db;
+      --accent-hover: #1040b0;
+    }
+
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+
+    /* SKIP LINK */
+    .skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: white; padding: 0.5rem 1rem; font-size: 0.85rem; z-index: 9999; text-decoration: none; border-radius: 0 0 4px 0; }
+    .skip-link:focus { top: 0; }
+
+    /* COOKIE BANNER */
+    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #111; color: #ccc; padding: 1rem 2rem; z-index: 9000; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: 0.78rem; line-height: 1.5; }
+    #cookie-banner.hidden { display: none; }
+    #cookie-banner a { color: #aaa; }
+    .cookie-btns { display: flex; gap: 0.5rem; flex-shrink: 0; }
+    .cookie-btn { padding: 0.35rem 0.9rem; font-family: 'Inter', sans-serif; font-size: 0.75rem; cursor: pointer; border-radius: 4px; border: none; font-weight: 500; }
+    .cookie-btn.accept { background: var(--accent); color: white; }
+    .cookie-btn.accept:hover { background: var(--accent-hover); }
+    .cookie-btn.reject { background: #2a2a2a; color: #ccc; border: 1px solid #444; }
+    .cookie-btn.reject:hover { background: #333; }
+
+    /* HEADER */
+    header { background: var(--white); border-bottom: none; padding: 0 2rem; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; height: 60px; }
+    .logo { font-size: 1.05rem; font-weight: 600; color: var(--black); text-decoration: none; letter-spacing: -0.02em; }
+    .logo span { color: var(--accent); }
+
+    /* HERO */
+    .hero { padding: 0 2rem 3rem; border-bottom: 1px solid var(--gray-light); background: var(--white); }
+    .hero-inner { max-width: 1100px; margin: 0 auto; padding-top: 1.25rem; border-top: 1.5px solid var(--black); }
+    .hero-desc { color: var(--gray-dark); font-size: 1.05rem; font-weight: 300; max-width: 620px; line-height: 1.75; margin-bottom: 1rem; text-align: justify; text-justify: inter-word; }
+    .hero-desc strong { font-weight: 600; color: var(--black); }
+    .hero-tagline { font-size: 0.78rem; font-weight: 700; color: var(--accent); letter-spacing: 0.04em; text-transform: uppercase; }
+
+    /* MAIN */
+    .main-wrap { padding: 0 2rem; }
+    main { max-width: 1100px; margin: 0 auto; padding: 0 0 5rem; }
+
+    /* SECTION HEADER */
+    .section-block { margin-top: 2.5rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.75rem; padding-bottom: 0.65rem; border-bottom: 1.5px solid var(--black); }
+    .section-title { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--black); }
+    .section-title a { color: inherit; text-decoration: none; }
+    .section-title a:hover { color: var(--accent); }
+    .section-count { font-size: 0.68rem; color: var(--gray-mid); }
+
+    /* TABLE */
+    .court-table { width: 100%; border-collapse: collapse; margin-top: 0.75rem; }
+    .court-table thead th { padding: 0.5rem 0.75rem; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gray-mid); text-align: left; white-space: nowrap; border-bottom: 1px solid var(--gray-light); }
+    .court-table tbody tr { border-bottom: 1px solid #f0f0f0; transition: background 0.08s; }
+    .court-table tbody tr:hover { background: #fafafa; }
+    .court-table td { padding: 0.75rem 0.75rem; vertical-align: middle; border-right: 1px solid #f0f0f0; }
+    .court-table td:last-child { border-right: none; }
+
+    .col-name { font-weight: 500; font-size: 0.84rem; white-space: nowrap; }
+    .col-abbr { font-size: 0.7rem; color: var(--gray-mid); white-space: nowrap; }
+    .col-link { white-space: nowrap; }
+    .col-link a { font-size: 0.76rem; font-weight: 500; color: var(--accent); text-decoration: none; white-space: nowrap; }
+    .col-link a:hover { color: var(--accent-hover); text-decoration: underline; }
+    .col-checked { font-size: 0.7rem; color: var(--gray-mid); text-align: left; white-space: nowrap; }
+
+    /* TOOLTIP */
+    .tooltip-wrap { position: relative; display: inline-block; cursor: help; border-bottom: 1px dotted #ccc; }
+    .tooltip-wrap .tooltip { visibility: hidden; opacity: 0; width: 260px; background: #111; color: #eee; font-size: 0.68rem; line-height: 1.55; padding: 0.5rem 0.75rem; border-radius: 4px; position: absolute; bottom: 130%; right: 0; z-index: 50; transition: opacity 0.15s; pointer-events: none; }
+    .tooltip-wrap:hover .tooltip, .tooltip-wrap:focus .tooltip { visibility: visible; opacity: 1; }
+
+    /* FOOTER */
+    footer { background: var(--gray-bg); border-top: 1px solid var(--gray-light); padding: 2rem; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .footer-brand { font-size: 0.92rem; font-weight: 600; letter-spacing: -0.02em; color: var(--black); margin-bottom: 0.3rem; }
+    .footer-brand span { color: var(--accent); }
+    .footer-tagline { font-size: 0.72rem; color: var(--gray-mid); }
+    .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; }
+    .footer-links a { font-size: 0.75rem; color: var(--gray-mid); text-decoration: none; }
+    .footer-links a:hover { color: var(--black); }
+    .footer-disclaimer { font-size: 0.7rem; color: var(--gray-mid); max-width: 700px; line-height: 1.6; margin-bottom: 1rem; text-align: justify; text-justify: inter-word; }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-top: 1px solid var(--gray-light); padding-top: 1rem; }
+    .footer-copyright { font-size: 0.7rem; color: var(--gray-mid); white-space: nowrap; }
+
+    /* ADMIN */
+    #admin-panel { display: none; background: #111; color: #bbb; padding: 2rem; font-size: 0.78rem; }
+    #admin-panel.visible { display: block; }
+    .admin-inner { max-width: 1100px; margin: 0 auto; }
+    .admin-inner h3 { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #555; margin-bottom: 1.25rem; }
+    .admin-row { display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.65rem; flex-wrap: wrap; }
+    .admin-row label { color: #555; width: 160px; flex-shrink: 0; }
+    .admin-row input { background: #1c1c1c; border: 1px solid #2e2e2e; color: #eee; padding: 0.3rem 0.5rem; font-family: 'Inter', sans-serif; font-size: 0.75rem; flex: 1; min-width: 160px; border-radius: 3px; }
+    .admin-btn { background: var(--accent); color: white; border: none; padding: 0.35rem 0.85rem; font-family: 'Inter', sans-serif; font-size: 0.72rem; cursor: pointer; border-radius: 3px; font-weight: 500; }
+    .admin-btn:hover { background: var(--accent-hover); }
+    .admin-btn.sec { background: #2a2a2a; border: 1px solid #333; }
+    .admin-btn.sec:hover { background: #333; }
+    hr.adiv { border: none; border-top: 1px solid #222; margin: 1rem 0; }
+    .admin-msg { font-size: 0.7rem; color: #4ade80; min-height: 1rem; margin-top: 0.4rem; }
+    .admin-trigger { opacity: 0; cursor: pointer; font-size: 0.68rem; transition: opacity 0.2s; user-select: none; }
+    footer:hover .admin-trigger { opacity: 0.2; }
+
+    /* PRINT */
+    @media print {
+      header, #cookie-banner, footer, #admin-panel { display: none !important; }
+      .court-table thead th, .court-table td { font-size: 8pt; padding: 3pt 4pt; }
+      .col-link a::after { content: " (" attr(href) ")"; font-size: 6pt; color: #666; }
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      .col-abbr { display: none; }
+      .hero-desc { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+  <p>We may use analytics cookies to understand how this site is used. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+  <div class="cookie-btns">
+    <button class="cookie-btn accept" onclick="acceptCookies()">Accept</button>
+    <button class="cookie-btn reject" onclick="rejectCookies()">Decline</button>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="LocalPractice.com — home">Local<span>Practice</span>.com</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-desc"><strong>Local rules and procedures from the federal appellate courts,</strong> in one place. No login. No paywall. This website seeks to promote awareness of local practice in the federal courts.</p>
+    <p class="hero-tagline">No Login &nbsp;·&nbsp; No Hassle &nbsp;·&nbsp; No Paywall</p>
+  </div>
+</div>
+
+<div class="main-wrap">
+<main id="main-content">
+  <div class="section-block">
+    <div class="section-header">
+      <span class="section-title">
+        <a href="https://www.uscourts.gov/about-federal-courts/court-role-and-structure/about-us-courts-appeals" target="_blank" rel="noopener">U.S. Circuit Courts of Appeals</a>
+      </span>
+      <span class="section-count">13</span>
+    </div>
+
+    <table class="court-table" id="circuit-table" aria-label="U.S. Circuit Courts of Appeals">
+      <thead>
+        <tr>
+          <th class="col-name" scope="col">Court</th>
+          <th class="col-abbr" scope="col">Abbr.</th>
+          <th scope="col">Local Rules</th>
+          <th scope="col">IOP / Procedures</th>
+          <th class="col-checked" scope="col">
+            <div class="tooltip-wrap" tabindex="0">Checked
+              <span class="tooltip" role="tooltip">Date these links were last checked by LocalPractice.com. Always confirm directly with the court.</span>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-name">First Circuit</td>
+          <td class="col-abbr">1st Cir.</td>
+          <td class="col-link"><a href="https://www.ca1.uscourts.gov/local-rules" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca1.uscourts.gov/iops" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Second Circuit</td>
+          <td class="col-abbr">2d Cir.</td>
+          <td class="col-link"><a href="https://www.ca2.uscourts.gov/docs/Rules/SummaryOfLocalRules.pdf" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca2.uscourts.gov/docs/Rules/IOPs.pdf" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Third Circuit</td>
+          <td class="col-abbr">3d Cir.</td>
+          <td class="col-link"><a href="https://www.ca3.uscourts.gov/local-appellate-rules-and-internal-operating-procedures" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca3.uscourts.gov/local-appellate-rules-and-internal-operating-procedures" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Fourth Circuit</td>
+          <td class="col-abbr">4th Cir.</td>
+          <td class="col-link"><a href="https://www.ca4.uscourts.gov/rules-and-procedures/rules" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca4.uscourts.gov/rules-and-procedures/iops" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Fifth Circuit</td>
+          <td class="col-abbr">5th Cir.</td>
+          <td class="col-link"><a href="https://www.ca5.uscourts.gov/clerk/rules" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca5.uscourts.gov/clerk/rules" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Sixth Circuit</td>
+          <td class="col-abbr">6th Cir.</td>
+          <td class="col-link"><a href="https://www.ca6.uscourts.gov/local-rules" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca6.uscourts.gov/iops" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Seventh Circuit</td>
+          <td class="col-abbr">7th Cir.</td>
+          <td class="col-link"><a href="https://www.ca7.uscourts.gov/rules/rules.htm" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca7.uscourts.gov/rules/rules.htm" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Eighth Circuit</td>
+          <td class="col-abbr">8th Cir.</td>
+          <td class="col-link"><a href="https://www.ca8.uscourts.gov/rules" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca8.uscourts.gov/rules" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Ninth Circuit</td>
+          <td class="col-abbr">9th Cir.</td>
+          <td class="col-link"><a href="https://www.ca9.uscourts.gov/rules/local-rules/" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca9.uscourts.gov/rules/iops/" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Tenth Circuit</td>
+          <td class="col-abbr">10th Cir.</td>
+          <td class="col-link"><a href="https://www.ca10.uscourts.gov/clerk/rules" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca10.uscourts.gov/clerk/rules" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Eleventh Circuit</td>
+          <td class="col-abbr">11th Cir.</td>
+          <td class="col-link"><a href="https://www.ca11.uscourts.gov/local-rules-and-internal-operating-procedures" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.ca11.uscourts.gov/local-rules-and-internal-operating-procedures" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">D.C. Circuit</td>
+          <td class="col-abbr">D.C. Cir.</td>
+          <td class="col-link"><a href="https://www.cadc.uscourts.gov/internet/home.nsf/content/VL+-+Court+Information+-+Rules+and+Procedures" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://www.cadc.uscourts.gov/internet/home.nsf/content/VL+-+Court+Information+-+Rules+and+Procedures" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+        <tr>
+          <td class="col-name">Federal Circuit</td>
+          <td class="col-abbr">Fed. Cir.</td>
+          <td class="col-link"><a href="https://cafc.uscourts.gov/home/rules-procedures/rules-of-practice/" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-link"><a href="https://cafc.uscourts.gov/home/rules-procedures/rules-of-practice/" target="_blank" rel="noopener">View →</a></td>
+          <td class="col-checked">Feb 2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="admin-panel" role="region" aria-label="Admin panel">
+  <div class="admin-inner">
+    <h3>Admin — Local Practice Enterprises</h3>
+    <div class="admin-row">
+      <label>Court (partial name):</label>
+      <input type="text" id="admin-court" placeholder="e.g. Ninth Circuit">
+      <input type="text" id="admin-date" placeholder="e.g. Feb 2026">
+      <button class="admin-btn" onclick="updateOne()">Update Court</button>
+      <button class="admin-btn sec" onclick="updateAll()">Update All Courts</button>
+    </div>
+    <hr class="adiv">
+    <div class="admin-row">
+      <label>Update a link:</label>
+      <input type="text" id="lc" placeholder="Court name">
+      <input type="text" id="lcol" placeholder="rules / procedures">
+      <input type="text" id="lurl" placeholder="New URL">
+      <button class="admin-btn" onclick="updateLink()">Update Link</button>
+    </div>
+    <div class="admin-msg" id="admin-msg"></div>
+    <div style="margin-top:1rem"><button class="admin-btn sec" onclick="toggleAdmin()">Close</button></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Local<span>Practice</span>.com</div>
+        <div class="footer-tagline">Federal Court Practice Resources</div>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <span class="admin-trigger" onclick="toggleAdmin()" title="Admin">⚙</span>
+      </nav>
+    </div>
+    <p class="footer-disclaimer"><strong>Disclaimer:</strong> For informational purposes only. Not legal advice. Verify all links directly with the court. Consult an attorney. This is not an official government website.</p>
+    <div class="footer-bottom">
+      <span class="footer-copyright">© 2026 Local Practice Enterprises</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // COOKIE CONSENT
+  (function() {
+    const c = localStorage.getItem('lp_cookie_consent');
+    if (c === 'accepted') loadAnalytics();
+    if (c) document.getElementById('cookie-banner').classList.add('hidden');
+  })();
+  function acceptCookies() { localStorage.setItem('lp_cookie_consent','accepted'); document.getElementById('cookie-banner').classList.add('hidden'); loadAnalytics(); }
+  function rejectCookies() { localStorage.setItem('lp_cookie_consent','rejected'); document.getElementById('cookie-banner').classList.add('hidden'); }
+  function loadAnalytics() {
+    // Paste GA4 snippet here
+  }
+
+  // ADMIN
+  const allRows = document.querySelectorAll('.court-table tbody tr');
+  function toggleAdmin() { document.getElementById('admin-panel').classList.toggle('visible'); }
+  function msg(m) { const e = document.getElementById('admin-msg'); e.textContent = m; setTimeout(()=>e.textContent='', 3500); }
+  function updateOne() {
+    const court = document.getElementById('admin-court').value.toLowerCase().trim();
+    const date  = document.getElementById('admin-date').value.trim();
+    if (!court || !date) return msg('Enter court name and date.');
+    let n = 0;
+    allRows.forEach(r => { if (r.querySelector('.col-name')?.textContent.toLowerCase().includes(court)) { r.querySelector('.col-checked').textContent = date; n++; } });
+    msg(n ? `Updated ${n} court(s).` : 'No match found.');
+  }
+  function updateAll() {
+    const date = document.getElementById('admin-date').value.trim();
+    if (!date) return msg('Enter a date.');
+    allRows.forEach(r => r.querySelector('.col-checked').textContent = date);
+    msg(`Updated all ${allRows.length} courts.`);
+  }
+  function updateLink() {
+    const court = document.getElementById('lc').value.toLowerCase().trim();
+    const col   = document.getElementById('lcol').value.toLowerCase().trim();
+    const url   = document.getElementById('lurl').value.trim();
+    if (!court || !col || !url) return msg('Fill all three fields.');
+    const map = { rules:2, procedures:3 };
+    const idx = map[col];
+    if (!idx) return msg('Column must be: rules or procedures.');
+    let n = 0;
+    allRows.forEach(r => {
+      if (r.querySelector('.col-name')?.textContent.toLowerCase().includes(court)) {
+        const cell = r.querySelectorAll('td')[idx];
+        if (cell) { cell.innerHTML = `<a href="${url}" target="_blank" rel="noopener">View →</a>`; n++; }
+      }
+    });
+    msg(n ? `Updated ${n} court(s).` : 'No match found.');
+  }
+</script>
+</body>
+</html>
