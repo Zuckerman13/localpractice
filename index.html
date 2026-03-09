@@ -79,7 +79,7 @@
     .logo span { color: var(--accent); }
 
     /* HERO */
-    .hero { padding: 0 2rem 3rem; border-bottom: 1px solid var(--gray-light); background: var(--white); }
+    .hero { padding: 0 2rem 3rem; border-bottom: none; background: var(--white); }
     .hero-inner { max-width: 1100px; margin: 0 auto; padding-top: 1.25rem; border-top: 1.5px solid var(--black); }
     .hero h1 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.6rem; line-height: 1.35; color: var(--black); }
     .hero-desc { color: var(--gray-dark); font-size: 1.05rem; font-weight: 300; max-width: 620px; line-height: 1.75; margin-bottom: 1rem; text-align: justify; text-justify: inter-word; }
@@ -99,8 +99,13 @@
     .section-count { font-size: 0.68rem; color: var(--gray-mid); }
 
     /* TABLE */
-    .court-table { width: 100%; border-collapse: collapse; margin-top: 0.75rem; }
+    .court-table { width: 100%; border-collapse: collapse; margin-top: 0.75rem; table-layout: fixed; }
     .court-table thead th { padding: 0.5rem 0.75rem; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gray-mid); text-align: left; white-space: nowrap; border-bottom: 1px solid var(--gray-light); position: relative; }
+    .court-table thead th:nth-child(1) { width: 32%; }
+    .court-table thead th:nth-child(2) { width: 12%; }
+    .court-table thead th:nth-child(3) { width: 20%; }
+    .court-table thead th:nth-child(4) { width: 20%; }
+    .court-table thead th:nth-child(5) { width: 16%; }
     .court-table tbody tr { border-bottom: 1px solid #f0f0f0; transition: background 0.08s; }
     .court-table tbody tr:hover { background: #fafafa; }
     .court-table td { padding: 0.75rem 0.75rem; vertical-align: middle; border-right: 1px solid #f0f0f0; }
@@ -216,7 +221,7 @@
 <div class="hero">
   <div class="hero-inner">
     <h1>Local Rules and Practice in the U.S. Courts of Appeals</h1>
-    <p class="hero-desc">Local rules and procedures from the federal appellate courts, in one place. No login. No paywall. This website seeks to promote awareness of local practice in the federal courts.</p>
+    <p class="hero-desc">Local rules and procedures from the federal appellate courts, in one place. This website seeks to promote awareness of local practice in the federal courts.</p>
     <p class="hero-tagline">No Login &nbsp;·&nbsp; No Hassle &nbsp;·&nbsp; No Paywall</p>
   </div>
 </div>
@@ -239,60 +244,60 @@
           <th class="col-abbr" scope="col">Abbr.<div class="col-resizer"></div></th>
           <th scope="col">Local Rules<div class="col-resizer"></div></th>
           <th scope="col">IOP / Guides<div class="col-resizer"></div></th>
-          <th class="col-checked" scope="col">Checked<div class="col-resizer"></div></th>
+          <th class="col-checked" scope="col">Verified<div class="col-resizer"></div></th>
         </tr>
       </thead>
       <tbody>
-        <tr data-court="first" data-note="Local rules and IOPs are published together in a single consolidated rulebook.">
+        <tr data-court="first" data-note="The First Circuit publishes local rules and IOPs together in a single consolidated rulebook.">
           <td class="col-name"><a href="https://www.ca1.uscourts.gov" target="_blank" rel="noopener">First Circuit</a></td>
           <td class="col-abbr">1st Cir.</td>
           <td class="col-link"><a href="https://www.ca1.uscourts.gov/rules-procedures" target="_blank" rel="noopener">View →</a></td>
           <td class="col-link"><a href="https://www.ca1.uscourts.gov/rules-procedures" target="_blank" rel="noopener">View →</a></td>
           <td class="col-checked">Mar. 2026</td>
         </tr>
-        <tr data-court="second" data-note="Local rules and IOPs are combined in a single document. IOPs are lettered A through I.">
+        <tr data-court="second" data-note="The Second Circuit combines local rules and IOPs in a single document. IOPs are lettered A through I.">
           <td class="col-name"><a href="https://www.ca2.uscourts.gov" target="_blank" rel="noopener">Second Circuit</a></td>
           <td class="col-abbr">2d Cir.</td>
           <td class="col-link"><a href="https://www.ca2.uscourts.gov/clerk/case_filing/rules/local_rules.html" target="_blank" rel="noopener">View →</a></td>
           <td class="col-link"><a href="https://www.ca2.uscourts.gov/clerk/case_filing/rules/local_rules.html" target="_blank" rel="noopener">View →</a></td>
           <td class="col-checked">Mar. 2026</td>
         </tr>
-        <tr data-court="third" data-note="This circuit maintains separate local rules and IOPs.">
+        <tr data-court="third" data-note="The Third Circuit maintains separate local rules and IOPs.">
           <td class="col-name"><a href="https://www.ca3.uscourts.gov" target="_blank" rel="noopener">Third Circuit</a></td>
           <td class="col-abbr">3d Cir.</td>
           <td class="col-link"><a href="https://www.ca3.uscourts.gov/rules-and-requirements" target="_blank" rel="noopener">View →</a></td>
           <td class="col-link"><a href="https://www.ca3.uscourts.gov/sites/ca3/files/IOPs.pdf" target="_blank" rel="noopener">View →</a></td>
           <td class="col-checked">Mar. 2026</td>
         </tr>
-        <tr data-court="fourth" data-note="Local rules and IOPs are published in a combined document, distinguished by prefix (Loc. R. vs. I.O.P.-).">
+        <tr data-court="fourth" data-note="The Fourth Circuit publishes local rules and IOPs in a combined document, distinguished by prefix (Loc. R. vs. I.O.P.-).">
           <td class="col-name"><a href="https://www.ca4.uscourts.gov" target="_blank" rel="noopener">Fourth Circuit</a></td>
           <td class="col-abbr">4th Cir.</td>
           <td class="col-link"><a href="https://www.ca4.uscourts.gov/rules-and-procedures/federal-local-rules-of-appellate-procedure" target="_blank" rel="noopener">View →</a></td>
           <td class="col-link"><a href="https://www.ca4.uscourts.gov/docs/rules/localrules.pdf" target="_blank" rel="noopener">View →</a></td>
           <td class="col-checked">Mar. 2026</td>
         </tr>
-        <tr data-court="fifth" data-note="Local rules and IOPs are published together. IOPs follow each corresponding rule.">
+        <tr data-court="fifth" data-note="The Fifth Circuit publishes local rules and IOPs together. IOPs follow each corresponding rule.">
           <td class="col-name"><a href="https://www.ca5.uscourts.gov" target="_blank" rel="noopener">Fifth Circuit</a></td>
           <td class="col-abbr">5th Cir.</td>
           <td class="col-link"><a href="https://www.ca5.uscourts.gov/rules-procedures" target="_blank" rel="noopener">View →</a></td>
           <td class="col-link"><a href="https://www.ca5.uscourts.gov/rules-procedures" target="_blank" rel="noopener">View →</a></td>
           <td class="col-checked">Mar. 2026</td>
         </tr>
-        <tr data-court="sixth" data-note="Local rules and IOPs are combined in a single PDF document.">
+        <tr data-court="sixth" data-note="The Sixth Circuit combines local rules and IOPs in a single PDF document.">
           <td class="col-name"><a href="https://www.ca6.uscourts.gov" target="_blank" rel="noopener">Sixth Circuit</a></td>
           <td class="col-abbr">6th Cir.</td>
           <td class="col-link"><a href="https://www.ca6.uscourts.gov/rules-and-procedures/local-rules-frap-local-rules-iops" target="_blank" rel="noopener">View →</a></td>
           <td class="col-link"><a href="https://www.ca6.uscourts.gov/rules-and-procedures/local-rules-frap-local-rules-iops" target="_blank" rel="noopener">View →</a></td>
           <td class="col-checked">Mar. 2026</td>
         </tr>
-        <tr data-court="seventh" data-note="This circuit maintains separate local rules and operating procedures.">
+        <tr data-court="seventh" data-note="The Seventh Circuit maintains separate local rules and operating procedures.">
           <td class="col-name"><a href="https://www.ca7.uscourts.gov" target="_blank" rel="noopener">Seventh Circuit</a></td>
           <td class="col-abbr">7th Cir.</td>
           <td class="col-link"><a href="https://www.ca7.uscourts.gov/pages/LandingPage.php?page=rules-frap" target="_blank" rel="noopener">View →</a></td>
           <td class="col-link"><a href="https://www.ca7.uscourts.gov/pages/LandingPage.php?page=operating-procedures" target="_blank" rel="noopener">View →</a></td>
           <td class="col-checked">Mar. 2026</td>
         </tr>
-        <tr data-court="eighth" data-note="This circuit maintains separate local rules and IOPs.">
+        <tr data-court="eighth" data-note="The Eighth Circuit maintains separate local rules and IOPs.">
           <td class="col-name"><a href="https://www.ca8.uscourts.gov" target="_blank" rel="noopener">Eighth Circuit</a></td>
           <td class="col-abbr">8th Cir.</td>
           <td class="col-link"><a href="https://www.ca8.uscourts.gov/rules-procedures" target="_blank" rel="noopener">View →</a></td>
@@ -313,21 +318,21 @@
           <td class="col-link"><a href="https://www.ca10.uscourts.gov/sites/ca10/files/documents/downloads/2025PracGuide_0.pdf" target="_blank" rel="noopener">View →</a></td>
           <td class="col-checked">Mar. 2026</td>
         </tr>
-        <tr data-court="eleventh" data-note="FRAP, local rules, and IOPs are published together in a single combined booklet.">
+        <tr data-court="eleventh" data-note="The Eleventh Circuit publishes FRAP, local rules, and IOPs together in a single combined booklet.">
           <td class="col-name"><a href="https://www.ca11.uscourts.gov" target="_blank" rel="noopener">Eleventh Circuit</a></td>
           <td class="col-abbr">11th Cir.</td>
           <td class="col-link"><a href="https://www.ca11.uscourts.gov/rules-procedures" target="_blank" rel="noopener">View →</a></td>
           <td class="col-link"><a href="https://www.ca11.uscourts.gov/rules-procedures" target="_blank" rel="noopener">View →</a></td>
           <td class="col-checked">Mar. 2026</td>
         </tr>
-        <tr data-court="dc" data-note="This circuit maintains separate circuit rules and a Handbook of Practice and Internal Procedures.">
+        <tr data-court="dc" data-note="The D.C. Circuit maintains separate circuit rules and a Handbook of Practice and Internal Procedures.">
           <td class="col-name"><a href="https://www.cadc.uscourts.gov" target="_blank" rel="noopener">D.C. Circuit</a></td>
           <td class="col-abbr">D.C. Cir.</td>
           <td class="col-link"><a href="https://www.cadc.uscourts.gov/circuit-rules-procedures" target="_blank" rel="noopener">View →</a></td>
           <td class="col-link"><a href="https://www.cadc.uscourts.gov/sites/cadc/files/rules-Handbook20251204.pdf" target="_blank" rel="noopener">View →</a></td>
           <td class="col-checked">Mar. 2026</td>
         </tr>
-        <tr data-court="federal" data-note="This circuit maintains separate local rules and IOPs.">
+        <tr data-court="federal" data-note="The Federal Circuit maintains separate local rules and IOPs.">
           <td class="col-name"><a href="https://www.cafc.uscourts.gov" target="_blank" rel="noopener">Federal Circuit</a></td>
           <td class="col-abbr">Fed. Cir.</td>
           <td class="col-link"><a href="https://www.cafc.uscourts.gov/home/rules-procedures-forms/federal-local-rules-of-appellate-procedure/" target="_blank" rel="noopener">View →</a></td>
