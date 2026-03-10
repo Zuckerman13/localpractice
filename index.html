@@ -491,7 +491,7 @@
   function updateAllDates() {
     var date = document.getElementById('bulk-date').value.trim();
     if (!date) return msg('Enter a date first.');
-    var rows = document.querySelectorAll('#circuit-table tbody tr');
+    var rows = document.querySelectorAll('#circuit-table tbody tr[data-court]');
     rows.forEach(function(row) {
       row.querySelectorAll('td')[4].textContent = date;
     });

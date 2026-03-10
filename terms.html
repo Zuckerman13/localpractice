@@ -23,6 +23,17 @@
     }
     body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
 
+    /* COOKIE BANNER */
+    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #111; color: #ccc; padding: 1rem 2rem; z-index: 9000; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: 0.78rem; line-height: 1.5; }
+    #cookie-banner.hidden { display: none; }
+    #cookie-banner a { color: #aaa; }
+    .cookie-btns { display: flex; gap: 0.5rem; flex-shrink: 0; }
+    .cookie-btn { padding: 0.35rem 0.9rem; font-family: 'Inter', sans-serif; font-size: 0.75rem; cursor: pointer; border-radius: 4px; border: none; font-weight: 500; }
+    .cookie-btn.accept { background: var(--accent); color: white; }
+    .cookie-btn.accept:hover { background: var(--accent-hover); }
+    .cookie-btn.reject { background: #2a2a2a; color: #ccc; border: 1px solid #444; }
+    .cookie-btn.reject:hover { background: #333; }
+
     header { background: var(--white); border-bottom: none; padding: 0 2rem; position: sticky; top: 0; z-index: 100; }
     .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; height: 60px; }
     .logo { font-size: 1.05rem; font-weight: 600; color: var(--black); text-decoration: none; letter-spacing: -0.02em; }
@@ -57,6 +68,15 @@
   </style>
 </head>
 <body>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+  <p>We may use analytics cookies to understand how this site is used. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+  <div class="cookie-btns">
+    <button class="cookie-btn accept" onclick="acceptCookies()">Accept</button>
+    <button class="cookie-btn reject" onclick="rejectCookies()">Decline</button>
+  </div>
+</div>
 
 <header>
   <div class="header-inner">
@@ -168,5 +188,28 @@
   </div>
 </footer>
 
+<script>
+  // COOKIE CONSENT
+  (function() {
+    var c = localStorage.getItem('lp_cookie_consent');
+    if (c === 'accepted') loadAnalytics();
+    if (c) document.getElementById('cookie-banner').classList.add('hidden');
+  })();
+  function acceptCookies() { localStorage.setItem('lp_cookie_consent','accepted'); document.getElementById('cookie-banner').classList.add('hidden'); loadAnalytics(); }
+  function rejectCookies() { localStorage.setItem('lp_cookie_consent','rejected'); document.getElementById('cookie-banner').classList.add('hidden'); }
+  function loadAnalytics() {
+    if (document.getElementById('ga4-script')) return;
+    var s = document.createElement('script');
+    s.id = 'ga4-script';
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-65K918Y631';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-65K918Y631');
+  }
+</script>
 </body>
 </html>
